@@ -20,6 +20,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.mail.MessagingException;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -143,8 +144,8 @@ public class RunController {
 
 
 	@RequestMapping(value = "run/toolOption", method = RequestMethod.POST)
-	public String toolOption(Locale locale, Model model, ToolVO tvo, HttpServletRequest request, HttpServletResponse response){		
-        
+	public String toolOption(Locale locale, Model model, ToolVO tvo, HttpServletRequest request, HttpServletResponse response) throws MessagingException, UnsupportedEncodingException{
+		        
 		String inputFile = "";
         String infoFile  = "";
         String inputPath = "/data/home/pathwaycloud/PathwayWebService/input/"+tvo.getProjectName();

@@ -11,6 +11,10 @@ public class ToolVO {
 	private ArrayList<MultipartFile> inputFiles;
 	private String projectName;
 	private String userEmail;
+	private String title;
+	private String content;
+	
+	
 	public ArrayList<String> getToolSet() {
 		return toolSet;
 	}
@@ -34,6 +38,18 @@ public class ToolVO {
 	}
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}	
 	
 }

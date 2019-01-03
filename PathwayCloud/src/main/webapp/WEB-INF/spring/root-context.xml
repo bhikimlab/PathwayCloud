@@ -8,5 +8,23 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<context:component-scan base-package="snu.bioinfo.pathway.domain"></context:component-scan>
 	<context:component-scan base-package="snu.bioinfo.pathway.service"></context:component-scan>
+	<context:component-scan base-package="snu.bioinfo.pathway.persistence"></context:component-scan>
+	
+	<!-- mail bean -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com"/>
+		<property name="port" value="587"/>
+		<property name="username" value="sophia5848@gmail.com"/>
+		<property name="password" value="1731165ee"/>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.timeout">8500</prop> <!-- mail 서버 연결시 timeout 시간 설정 -->
+				<prop key="mail.debug">true</prop> <!-- log를 보고 싶다면 사용 -->
+			</props>
+  		</property>
+  	</bean>	
 </beans>
 	

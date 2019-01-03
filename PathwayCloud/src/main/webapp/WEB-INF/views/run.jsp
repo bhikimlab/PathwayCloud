@@ -28,7 +28,7 @@
 <body style="margin:10px">
 <%@ include file="header.jsp" %>
 <%@ include file="nav.jsp" %>
-<h1 style="margin:20px 20px 30px 20px; font-weight:bold;">▶ Run Tools</h1>
+<h1 style="margin:40px 60px 40px 60px; font-weight:bold;">▶ Run Tools</h1>
 <div style="margin:40px 60px 40px 60px;">
 	<div style="font-size:18pt; font-weight:bold;" class="text-primary">Set up Project</div>
 	<form  class="border" style="font-size:13pt; margin:10px 10px 0px 10px" name="makeProject" id="makeProject" action="run" method="post">
@@ -44,6 +44,9 @@
 		
 		<label style="font-size:15pt">&gt; input User Email</label><br/>
 		<input style="width:300px; margin-left:20px;" type="text" name="userEmail" placeholder="이메일을 입력해주세요."/><br/><br/>
+		<input type="hidden" name="title" value="pathwaycloud 결과를 확인하세요!"/>
+		<input type="hidden" name="content" value="pathwaycloud tool 실행 결과가 나왔습니다. 홈페이지로 가셔서 확인해 주세요!"/>
+		
 		
 		<label style="font-size:15pt">&gt; input Gene expression File (.CSV)</label><br/>
 		<input style="margin-left:20px;" type="file" name="inputFiles" /><br/>
@@ -52,16 +55,16 @@
 		<input style="margin-left:20px;" type="file" name="inputFiles" /><br/>
 		
 		<label style="font-size:15pt">&gt; select Tool</label><br/>
-		<input style="margin-left:20px;" type="checkbox" name="toolSet" value="GSVA"/>&nbsp;GSVA &nbsp;&nbsp;
-		<input type="checkbox" name="toolSet" value="DART"/>&nbsp;DART &nbsp;&nbsp;
-		<input type="checkbox" name="toolSet" value="ESEA"/>&nbsp;ESEA &nbsp;&nbsp;
-		<input type="checkbox" name="toolSet" value="LLR"/>&nbsp;LLR &nbsp;&nbsp;
+		<input style="margin-left:20px;" type="checkbox" name="toolSet" value="GSVAdif"/>&nbsp;GSVAdif &nbsp;&nbsp;
+		<input type="checkbox" name="toolSet" value="GSVAmax"/>&nbsp;GSVAmax &nbsp;&nbsp;
+		<input type="checkbox" name="toolSet" value="CORG"/>&nbsp;CORG &nbsp;&nbsp;
+		<input type="checkbox" name="toolSet" value="PLAGE"/>&nbsp;PLAGE &nbsp;&nbsp;
 		<input type="checkbox" name="toolSet" value="PADOG"/>&nbsp;PADOG &nbsp;&nbsp;
 		<input type="checkbox" name="toolSet" value="PADOG"/>&nbsp;PADOG_prepare &nbsp;&nbsp;
 		<input type="checkbox" name="toolSet" value="PathAct"/>&nbsp;PathAct &nbsp;&nbsp;
-		<input type="checkbox" name="toolSet" value="Pathifier"/>&nbsp;Pathifier &nbsp;&nbsp;
-		<input type="checkbox" name="toolSet" value="SAS"/>&nbsp;SAS &nbsp;&nbsp;
-		<input type="checkbox" name="toolSet" value="SAS"/>&nbsp;Test	       
+		<input type="checkbox" name="toolSet" value="ssGESA"/>&nbsp;ssGESA &nbsp;&nbsp;
+		<input type="checkbox" name="toolSet" value="Test"/>&nbsp;Test &nbsp;&nbsp;
+		<input type="checkbox" name="toolSet" value="GSVA"/>&nbsp;GSVA      
 		<br/><br/>
 		
 		<button class="btn btn-success" type="submit">START</button>

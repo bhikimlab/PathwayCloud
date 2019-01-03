@@ -23,7 +23,7 @@
 	 It provides 13 previously published tools to be run with conditions applied.<br/>
 	 Users can also be provided which of the tools are adequate for their scope of analysis and also download the result to local storage.
 	 </div><br/>
-	 <div style="text-align:center">
+	 <div style="text-align:center; margin-bottom:20px;">
 	 	<img src="resources/images/mainFig.png"/>
 	 </div>
 </div>
